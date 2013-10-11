@@ -12,7 +12,7 @@ Provides a widget to display water quality test results provided by the Surfride
 
 == Description ==
 
-The Coastal Factoid plugin provides a Wordpress Widget that displays water quality testing results from the Surfrider Foundation's Blue Water Task Force water testing program. Tests are perfomed by chapter volunteers, and the results collected in a database, from which the data for this widget is displayed
+The Blue Water Task Force Water Quality plugin provides a Wordpress Widget that displays water quality testing results from the Surfrider Foundation's Blue Water Task Force water testing program. Tests are perfomed by chapter volunteers, and the results collected in a database, from which the data for this widget is displayed
 
 == Installation ==
 
