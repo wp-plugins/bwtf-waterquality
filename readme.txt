@@ -45,7 +45,7 @@ START ONE! Contact Surfrider's national headquarters: info@surfrider.org
 == Changelog ==
 
 = 1.0 =
-* Changed styling to make results more readable
+* Changes to HTML styles to make results more readable
 
 = 0.96 =
 * Fixed bugs, changed some HTML styling
