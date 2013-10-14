@@ -44,6 +44,9 @@ START ONE! Contact Surfrider's national headquarters: info@surfrider.org
 
 == Changelog ==
 
+= 1.0 =
+* Changed styling to make results more readable
+
 = 0.96 =
 * Fixed bugs, changed some HTML styling
 * Added link to all beaches tested by the chapter

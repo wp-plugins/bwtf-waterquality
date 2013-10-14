@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BWTF Water Quality
  * Description: Provides a Widget to display water quality test resuts from Surfrider Foundation's Blue Water Task Force program
- * Version: 0.96
+ * Version: 1.0
  * Author: Christopher Wilson (cwilson@surfrider.org)
  * License: GPL2
  */
@@ -47,7 +47,7 @@ class WQWidget extends WP_Widget {
 		$contenturl = 'wq.php?site=' . $instance['siteid'];
 		// Widget output
 		echo '<div class="widget"><h3>Latest Local Water Quality</h3>
-		<a href="http://www.surfrider.org/blue-water-task-force"><img src="' . plugins_url( 'bwtf.jpg' , __FILE__  ) . '" style="padding:5px;" align="left" /></a>
+		<div style="clear:left"><a href="http://www.surfrider.org/blue-water-task-force"><img src="' . plugins_url( 'bwtf.jpg' , __FILE__  ) . '" style="padding:5px;" align="left" /></a></div>
 		<SCRIPT LANGUAGE= "JavaScript">
 		function httpGet(theUrl)
     		{

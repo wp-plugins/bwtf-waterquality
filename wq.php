@@ -39,22 +39,22 @@ $jsonDecoded = objectToArray($jsonDecoded);
 if ((string)$jsonDecoded["lab"]["primaryTestType"] == 'Entero') {
 
 	if ((string)$jsonDecoded["samples"][0]["enterobacteria"] < '36') {
-		$baclevel = '<span style="color:green">Low Bacteria</span>';
+		$baclevel = '<div style="margin-left:90px; margin-right:auto; padding:10px; background-color:#6DCA21">Low Bacteria</div>';
 	} elseif ((string)$jsonDecoded["samples"][0]["enterobacteria"] < '105') {
-		$baclevel = '<span style="color:yellow">Medium Bacteria</span>';
+		$baclevel = '<div style="margin-left:90px; margin-right:auto; padding:10px; background-color:#F7CA1F">Medium Bacteria</div>';
 	} else {
-		$baclevel = '<span style="color:red">High Bacteria</span>';
+		$baclevel = '<div style="margin-left:10px; margin-right:auto; padding:10px; background-color:#CB391C">High Bacteria</div>';
 	}
 	$bacnumber = (string)$jsonDecoded["samples"][0]["enterobacteria"];
 
 } elseif ((string)$jsonDecoded["lab"]["primaryTestType"] == 'Ecoli') {
 	
 	if ((string)$jsonDecoded["samples"][0]["ecolbacteria"] < '127') {
-                $baclevel = '<span style="color:green">Low Bacteria</span>';
+                $baclevel = '<div style="margin-left:90px; margin-right:auto; padding:10px; background-color:#6DCA21">Low Bacteria</div>';
         } elseif ((string)$jsonDecoded["samples"][0]["ecolbacteria"] < '236') {
-                $baclevel = '<span style="color:yellow">Medium Bacteria</span>';
+                $baclevel = '<div style="margin-left:90px; margin-right:auto; padding:10px; background-color:#F7CA1F">Medium Bacteria</div>';
         } else { 
-                $baclevel = '<span style="color:red">High Bacteria</span>';
+                $baclevel = '<div style="margin-left:90px; margin-right:auto; padding:10px; background-color:#CB391C">High Bacteria</div>';
         }
 	$bacnumber = (string)$jsonDecoded["samples"][0]["ecolbacteria"];
 }
