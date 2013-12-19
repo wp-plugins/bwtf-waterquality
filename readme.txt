@@ -3,7 +3,7 @@ Contributors: gwsuperfan
 Donate link: https://secure.surfrider.org/page/contribute/give-to-the-surfrider-foundation?source=WPBWTF
 Tags: widget, water quality
 Requires at least: 3.0.1
-Tested up to: 3.6.1
+Tested up to: 3.8
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,7 @@ The Blue Water Task Force Water Quality plugin provides a Wordpress Widget that 
 1. Upload and activate the plugin (bwtf-waterquality.zip)
 1. Drag the Local Water Quality widget to the place in the theme that you would like the widget to appear
 1. Enter the Site ID for the site from which you would like results displayed
+1. On some servers, the default method for fetching data (FileGetContents) may not return anything. In this case, you can use the 'CURL' method.
 
 == Frequently Asked Questions ==
 
@@ -44,8 +45,11 @@ START ONE! Contact Surfrider's national headquarters: info@surfrider.org
 
 == Changelog ==
 
+= 2.0 =
+* Added option to retrieve data via CURL rather than via FileGetContents
+
 = 1.0 =
-* Changes to HTML styles to make results more readable
+* More minor bugfixes, formatting changes
 
 = 0.96 =
 * Fixed bugs, changed some HTML styling
@@ -58,6 +62,9 @@ START ONE! Contact Surfrider's national headquarters: info@surfrider.org
 * First beta version
 
 == Upgrade Notice ==
+
+= 2.0 =
+Adds an additional method to retrieve data so that the plugin will work on servers that do not support the PHP FileGetContents method.
 
 = 0.96 =
 This is the first public release.
