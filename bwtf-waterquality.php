@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BWTF Water Quality
  * Description: Provides a Widget to display water quality test resuts from Surfrider Foundation's Blue Water Task Force program
- * Version: 2.0
+ * Version: 2.0.1
  * Author: Christopher Wilson (cwilson@surfrider.org)
  * License: GPL2
  */
@@ -32,8 +32,13 @@ class WQWidget extends WP_Widget {
 	<input class="widefat" id="<?php echo $this->get_field_id('siteid'); ?>" name="<?php echo $this->get_field_name('siteid'); ?>" type="text" value="<?php echo $siteid; ?>" /><br />
 	<label for="<?php echo $this->get_field_id('method'); ?>"><?php _e('Select fetch method:', 'wp_widget_plugin'); ?></label>
 	<select class="widefat" id="<?php echo $this->get_field_id('method'); ?>" name="<?php echo $this->get_field_name('method'); ?>" >
+	<?php if ($method == 'CURL') { ?>
+	<option value="CURL">LibCurl</option>
+	<option value="FILEGC">FileGetContents (default)</option>
+	<?php } else { ?>
 	<option value="FILEGC">FileGetContents (default)</option>
 	<option value="CURL">LibCurl</option>
+	<?php } ?>
 	</select>
 	</p>
 	<p>

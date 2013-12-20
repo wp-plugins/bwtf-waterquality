@@ -45,6 +45,9 @@ START ONE! Contact Surfrider's national headquarters: info@surfrider.org
 
 == Changelog ==
 
+= 2.0.1 =
+* Made it clear that settings are being saved
+
 = 2.0 =
 * Added option to retrieve data via CURL rather than via FileGetContents
 
