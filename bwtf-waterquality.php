@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BWTF Water Quality
  * Description: Provides a Widget to display water quality test resuts from Surfrider Foundation's Blue Water Task Force program
- * Version: 2.0.1
+ * Version: 2.1
  * Author: Christopher Wilson (cwilson@surfrider.org)
  * License: GPL2
  */

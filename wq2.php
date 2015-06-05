@@ -27,7 +27,7 @@ function objectToArray($d) {
 
 #$site = '358';
 $site = $_GET['site'];
-$jsonURL = "http://www.surfrider.org/bwtf/site/getByID/" . $site;
+$jsonURL = "https://www.surfrider.org/bwtf/site/getByID/" . $site;
 #$jsonData = file_get_contents($jsonURL);
 $curl = curl_init();
 curl_setopt_array($curl, array(
